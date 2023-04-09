@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tabs.css">
+    <title>Католог товаров</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav> <!--меню навигация-->
+            <input type="checkbox" id="checkbox-menu">
+            <label for="checkbox-menu">
+                <ul class="menu touch">
+                    <li><a class="logo" href="#">Centurion</a></li>
+                    <li><a href="#">О бренде</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#" class="active-tab">Модели</a></li>
+                    <li><a href="#">Гарантия</a></li>
+                    <li><a class="contacts" href="#">Контакты</a></li>
+                    <li><a href="#">Стать дилером</a></li>
+                    <li><a href="#">Поддержка</a></li>
+                </ul>
+                <span class="toggle">☰</span>
+            </label>
+        </nav>
+    </header>
+    <main> <!--основное содержимое страницы-->
+        <div class="pc-tab wrapper">
+            <h1>Наши товары</h1>
+            <input checked="checked" id="tab1" type="radio" name="pct" /> 
+            <input id="tab2" type="radio" name="pct" />
+            <input id="tab3" type="radio" name="pct" />
+            <nav> <!--вкладки каталога-->
+                <ul>
+                    <li class="tab1">
+                        <label for="tab1">Охранные системы</label>
+                    </li>
+                    <li class="tab2">
+                        <label for="tab2">Автозвук</label>
+                    </li>
+                    <li class="tab3">
+                        <label for="tab3">Иммобилайзеры</label>
+                    </li>
+                </ul>
+            </nav>
+            <section>
+                <div class="tab1 border"> <!--содержимое первой вкладки, карточки товаров-->
+                    <h2>Охранные Системы</h2>
+                    <div class="wrapper product">
+                        <div class="cards">
+                            <div class="card">
+                                <img src="img/box1.jpg" alt="">
+                                <div class="card-container">
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                    <div class="card-info">
+                                        <div class="money">$3,500</div>
+                                        <div class="info">
+                                            <span>AV</span>
+                                            <span>AHJ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="img/box1.jpg" alt="">
+                                <div class="card-container">
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                    <div class="card-info">
+                                        <div class="money">$3,500</div>
+                                        <div class="info">
+                                            <span>AV</span>
+                                            <span>AHJ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="img/box1.jpg" alt="">
+                                <div class="card-container">
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                    <div class="card-info">
+                                        <div class="money">$3,500</div>
+                                        <div class="info">
+                                            <span>AV</span>
+                                            <span>AHJ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="img/box1.jpg" alt="">
+                                <div class="card-container">
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                    <div class="card-info">
+                                        <div class="money">$3,500</div>
+                                        <div class="info">
+                                            <span>AV</span>
+                                            <span>AHJ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="img/box1.jpg" alt="">
+                                <div class="card-container">
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                    <div class="card-info">
+                                        <div class="money">$3,500</div>
+                                        <div class="info">
+                                            <span>AV</span>
+                                            <span>AHJ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="img/box1.jpg" alt="">
+                                <div class="card-container">
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                    <div class="card-info">
+                                        <div class="money">$3,500</div>
+                                        <div class="info">
+                                            <span>AV</span>
+                                            <span>AHJ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <img src="img/box1.jpg" alt="">
+                                <div class="card-container">
+                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                    <div class="card-info">
+                                        <div class="money">$3,500</div>
+                                        <div class="info">
+                                            <span>AV</span>
+                                            <span>AHJ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab2 border"> <!--содержимое второй вкладки-->
+                    <h2>Автозвук</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum nesciunt ipsum dolore error
+                        repellendus officiis aliquid a, vitae reprehenderit, accusantium vero, ad. Obcaecati numquam
+                        sapiente cupiditate. Praesentium eaque, quae error!</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, maiores.</p>
+                </div>
+                <div class="tab3 border"> <!--содержимое третьей вкладки-->
+                    <h2>Иммобилайзеры</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, nobis culpa rem, vitae earum
+                        aliquid.</p>
+                </div>
+            </section>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="footer-block"> <!--блок с логотипом и формой для подписки-->
+                <div class="footer-logo">
+                    <h3>Centurion</h3>
+                    <h3>Alarm Systems</h3>
+                </div>
+                <div class="footer-search">
+                    <input type="text" placeholder="Подписаться на новостную рассылку">
+                </div>
+            </div>
+            <hr>
+            <div class="footer-links"> <!--блок со ссылками-->
+                <div class="footer-links-logo">
+                    <h4>Centurion</h4>
+                </div>
+                <div class="footer-link">
+                    <p>Компания</p>
+                    <a href="#">О бренде</a>
+                    <a href="#">Контакты</a>
+                </div>
+                <div class="footer-link">
+                    <p>Товары</p>
+                    <a href="#">Каталог</a>
+                    <a href="#">Топ-модели</a>
+                    <a href="#">Инструкции</a>
+                </div>
+                <div class="footer-link">
+                    <p>Сервис</p>
+                    <a href="#">Дилеры</a>
+                    <a href="#">Получить гарантию</a>
+                    <a href="#">Подобрать модель</a>
+                </div>
+                <div class="footer-link">
+                    <p>Поддержка</p>
+                    <a href="#">FAQ</a>
+                    <a href="#">Написать нам</a>
+                    <a href="#">Сотрудничество</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
