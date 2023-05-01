@@ -1,0 +1,86 @@
+/*-----Страница Гарантия----- */
+.get-warranty{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 20px;
+}
+.get-warranty-form{ /* контейнер с формой*/
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 25px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.get-warranty-form h2{ /* заголовок формы*/
+    font-size: 40px;
+    text-align: center;
+}
+.get-warranty-form form{ /* позиционирование формы*/
+    margin-top: 30px;
+}
+.get-warranty-form form .input-box{ /* поля, располагающиеся на всю ширину формы*/
+    width: 100%;
+    margin-top: 20px;
+}
+.input-box label{
+    color: #000;
+}
+form :where(.input-box input, .select-box){ /* стилизация всех полей ввода*/
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding: 0 15px;
+    font-size: 13px;
+    margin-top: 8px;
+}
+.input-box input:focus{ /*добавление тени для поля в фокусе */
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+form .column{ /*располложение полей ввода в две колонки */
+    display: flex;
+    gap: 15px;
+
+}
+.address :where(input, .select-box){ /* отступ сверху для полей ввода адреса*/
+    margin-top: 15px;
+
+}
+.select-box select{ /* оформление полей с выбором варианта ответа*/
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    color: #000;
+    font-size: 13px;
+}
+.get-warranty-form form input[type=submit]{ /* кнопка отправки формы*/
+    height: 55px;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    background-color: #00b8e4;
+    transition: all .2s ease;
+}
+.get-warranty-form form input[type=submit]:hover{ /* изменение цвета кнопки при наведении курсора*/
+    background-color: #00a3cc;
+}
+
+
+@media screen and (max-width: 765px){
+    form .column{ /* перенос строк ввода, которые располагаются в две колонки*/
+        flex-wrap: wrap;
+    }
+    .get-warranty-form h2{
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,162 @@
+/*------Страница Товара------ */
+.products{
+    background-color: #fff;
+}
+.title{ /*название модели */
+    font-size: 36px;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+span{ /* вид модели */
+    font-size: 30px;
+    color: #ddd;
+    display: block;
+}
+.model-content{ /* информация на странице*/
+    display: flex;
+}
+.model-img{ /* контейнер для слайдера с изображениями*/
+    padding: 0 20px;
+    width: 50%;
+    min-width: 0;
+}
+
+.main-slider{ /* основной слайдер*/
+    position: relative;
+    border: 1px solid #f6f5f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper .main-slider { /* размер основного изображения*/
+    width: 450px;
+    height: 450px;
+}
+.subslider{ /* отступы для нижнего слайдера с превью*/
+    margin: 0 -6px;
+    margin-top: 10px;
+}
+.subslide{
+    padding: 0 6px;
+    /* position: relative; */
+}
+.swiper-slide-thumb-active .subimage{ /* выделение превью текущего основного слайда на нижнем слайдере*/
+    border: 2px solid #ddd;
+}
+/* изображения в нижнем слайдере*/
+.subimage{ 
+    height: 80px;
+    border: 1px solid #f6f5f4;
+}
+.subimage img{
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.model-body{ /* задание ширины для контейнера с текстовой информацией*/
+    width: 50%;
+}
+.model-body-nav{ /* позиционирование вкладок навигации*/
+    display: flex;
+    align-items: center;
+}
+a.tabs-item{ /* стилизация вкладок-ссылок*/
+    text-decoration: none;
+    height: 50px;
+    width: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ddd;
+    text-transform: uppercase;
+    padding: 0 30px;
+}
+.tabs-block{ /* по умолчанию контент вкладок скрыт*/
+    padding: 20px;
+    display: none;
+    position: relative;
+}
+/* задание линии подчеркивания для активной вкладки*/
+.tabs-block::before{
+    content: "";
+    height: 50px;
+    width: 140px;
+    position: absolute;
+    top: -60px;
+}
+.tabs-block:nth-child(1)::before{
+    /* background-color: #000; */
+    border-bottom: 1px dotted #ddd;
+}
+.tabs-block:nth-child(2)::before{
+    /* background-color: #000; */
+    border-bottom: 1px dotted #ddd;
+    left: 190px;
+}
+.tabs-block:target{ /*при нажатии на вкладку-ссылку происходит отображение ее контента */
+    display: block;
+}
+/* стилизация текста внутри вкладки с описанием*/
+.model-body-body{
+    padding-left: 30px;
+}
+.model-body-body .tabs-block p{
+    margin-bottom: 20px;
+    font-size: 13px;
+    line-height: 20px;
+}
+/*таблица */
+table{ 
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 13px;
+}
+tr{
+    border-bottom: 1px solid #f6f5f4;
+}
+td{
+    width: 50%;
+    padding: 15px 0;
+    padding-left: 5px;
+}
+td.td-label{
+    color: #333;
+}
+tr:last-child{ /*убрать нижнее подчеркивание у последней строки */
+    border-bottom: none;
+}
+
+@media screen and (max-width: 765px){
+    .products{
+        padding: 20px;
+    }
+    .model-content{
+        flex-direction: column;
+    }
+    .model-img{
+        width: 100%;
+    }
+    .model-body{
+        width: 100%;
+    }
+    .image-slider img{
+       width: 100%;
+    }
+    .model-body{
+        margin-top: 20px;
+    }
+    .model-body-body{
+        padding: 0;
+    }
+    .tabs-block:nth-child(2)::before{
+        left: 180px;
+    }
+    .title{
+        font-size: 30px;
+    }
+    span{
+        font-size: 24px;
+    }
+}

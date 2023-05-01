@@ -1,0 +1,102 @@
+/*----Страница О бренде----- */
+.about{ /*на странице две части, расположенные вертикально */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about-row{ /* верхняя часть, в которой горизонтально расположены контейнер с изображением и контейнер с текстом*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: fit-content;
+    max-width: 100%;
+}
+.about-row-container{
+    border: 0 solid transparent;
+    padding: 30px;
+    max-width: 550px;
+}
+.about-row-container h2{ /* заголовок*/
+    word-wrap: break-word;
+    position: relative;
+    font-size: 28px;
+}
+.about-row-container p{ /* основной текст*/
+    padding: 20px 0 0;
+    line-height: 18px;
+    font-size: 13px;
+}
+.about-row-container button{ /* стилизация кнопки*/
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: #00b8e4;
+    text-align: center;
+    margin: 30px auto 0 0;
+    padding: 20px 47px 20px 46px;
+    border: none;
+    border-radius: 3px;
+}
+.about-row-container button:hover{ /*изменения цвета кнопки при наведении курсора */
+    background-color: #00a3cc;
+}
+.about-list{ /* позиционирование блоков с контактной информацией*/
+    margin: 0 auto 60px;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+
+}
+.about-list-box{ /*стилизация одного блока */
+    width: 25%;
+    background-color: #00b8e4;
+    padding: 40px 30px;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.about-list-box h5{ /* стилизация заголовка блока*/
+    font-size: 20px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.about-list-box h5 i{ /* иконки*/
+    font-size: 18px;
+    margin-right: 10px;
+}
+.about-list-box p{ /* текст в блоке */
+    word-wrap: break-word;
+    position: relative;
+}
+
+
+
+@media screen and (max-width: 765px) {
+    .about-row{ /*для мобильной версии контейнер с изображением и с текстом располагаются вертикально */
+        flex-direction: column-reverse;
+    }
+    .about-row-container{
+        max-width: 100%;
+        padding: 30px 20px 40px;
+    }
+    .about-row-container p{
+        line-height: 20px;
+    
+    }
+    .about-row-container img{
+        padding-left: 10px;
+        padding-right: 10px;
+        max-height: 400px;
+    }
+    .about-list{ /* для мобильной версии блоки с контактной информацией располагаются вертикально*/
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 30px;
+    }
+    .about-list-box{
+        width: 100%;
+        margin-top: 20px;
+    }
+}
