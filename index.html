@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/69bd6ff73b.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -17,14 +19,15 @@
             <input type="checkbox" id="checkbox-menu">
             <label for="checkbox-menu">
                 <ul class="menu touch">
-                    <li><a class="logo" href="#">Centurion</a></li>
-                    <li><a href="#">О бренде</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Модели</a></li>
-                    <li><a href="#">Гарантия</a></li>
-                    <li><a class="contacts" href="#">Контакты</a></li>
+                    <li onclick="location.href='#'"><img src="img/logo.png" alt=""></li>
+                    <!-- <li><a class="logo" href="index.html">Centurion</a></li> -->
+                    <li><a href="about.html">О бренде</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="tabs.html">Модели</a></li>
+                    <li><a href="get_warranty.html">Гарантия</a></li>
+                    <li><a class="contacts" href="contact_us.html">Контакты</a></li>
                     <li><a href="#">Стать дилером</a></li>
-                    <li><a href="#">Поддержка</a></li>
+                    <li><a href="index.html#services">Поддержка</a></li>
                 </ul>
                 <span class="toggle">☰</span>
             </label>
@@ -32,13 +35,18 @@
     </header>
     <main> <!--основное содержимое страницы-->
         <section class="intro wrapper"> <!--секция интро-->
+            <div id="scrollTop" class="scrollhide">
+                <i class="fa-solid fa-chevron-up"></i>
+            </div>
             <div class="intro-img">
-                <div class="intro-text">
+                <div class="intro-text" id="introtext">
                     <p>Find your new</p>
                     <p>Centurion</p>
                 </div>
                 <div class="intro-contacts">
-                    <p>тел. +7(812)710-28-04</p>
+                    <p><i class="fa-solid fa-phone"></i></p>
+                    <p>+7(812)710-28-04</p>
+                    <p><i class="fa-solid fa-location-dot"></i></p>
                     <p>СПб, ул.Моисеенко, д.41</p>
                 </div>
             </div>
@@ -46,12 +54,13 @@
         <section class="stats wrapper"> <!--секция статистика компании-->
             <div class="stats-text">
                 <h2>О торговой марке</h2><h2>Centurion</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempora saepe assumenda fuga,
-                    nam doloribus officiis soluta suscipit totam aspernatur praesentium hic temporibus minus iure
-                    consectetur nulla facilis, repellat et atque iusto.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tempora saepe assumenda fuga,
-                        nam doloribus officiis soluta suscipit totam aspernatur praesentium hic temporibus minus iure
-                        consectetur nulla facilis, repellat et atque iusto.</p>
+                <p>Бренд Centurion создан группой профессионалов в области автомобильной электроники с целью объединения лучших 
+                    разработок в сфере охранных технологий под одной торговой маркой. Автомобильные сигнализации Centurion 
+                    получили признание среди профессионалов и были установлены более чем на 1,5 миллиона автомобилей.</p>
+                    <p>Мы предлагаем и дорогие охранные комплексы с
+                          двухсторонней связью и функцией запуска двигателя и бюджетные решения без обратной связи. 
+                          Продукцию Centurion можно приобрести и установить в более чем 3 000 установочных студиях, 
+                          автосалонах и розничных магазинах на всей территории РФ.</p>
             </div>
             <div class="stats-num"> <!--статистика в числах-->
                 <div class="stats-line">
@@ -80,10 +89,10 @@
             <div class="wrapper product">
                 <h2>Различные Модели</h2><h2>Охранных Систем</h2>
                 <div class="cards"> <!--блок с карточками товаров-->
-                    <div class="card"> <!--карточка товара-->
+                    <div class="card" onclick="location.href='secures.html#tab01'"> <!--карточка товара-->
                         <img src="img/box1.jpg" alt="">
                         <div class="card-container"> <!--блок с информацией о товаре внизу карточки-->
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            <p>Охранная система Centurion F50</p>
                             <div class="card-info">
                                 <div class="money">$3,500</div>
                                 <div class="info">
@@ -93,10 +102,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" onclick="location.href='secures.html#tab01'"> <!--карточка товара-->
                         <img src="img/box1.jpg" alt="">
-                        <div class="card-container">
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="card-container"> <!--блок с информацией о товаре внизу карточки-->
+                            <p>Охранная система Centurion F50</p>
                             <div class="card-info">
                                 <div class="money">$3,500</div>
                                 <div class="info">
@@ -106,10 +115,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" onclick="location.href='secures.html#tab01'"> <!--карточка товара-->
                         <img src="img/box1.jpg" alt="">
-                        <div class="card-container">
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="card-container"> <!--блок с информацией о товаре внизу карточки-->
+                            <p>Охранная система Centurion F50</p>
                             <div class="card-info">
                                 <div class="money">$3,500</div>
                                 <div class="info">
@@ -119,10 +128,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" onclick="location.href='secures.html#tab01'"> <!--карточка товара-->
                         <img src="img/box1.jpg" alt="">
-                        <div class="card-container">
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="card-container"> <!--блок с информацией о товаре внизу карточки-->
+                            <p>Охранная система Centurion F50</p>
                             <div class="card-info">
                                 <div class="money">$3,500</div>
                                 <div class="info">
@@ -132,10 +141,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" onclick="location.href='secures.html#tab01'"> <!--карточка товара-->
                         <img src="img/box1.jpg" alt="">
-                        <div class="card-container">
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="card-container"> <!--блок с информацией о товаре внизу карточки-->
+                            <p>Охранная система Centurion F50</p>
                             <div class="card-info">
                                 <div class="money">$3,500</div>
                                 <div class="info">
@@ -145,10 +154,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card" onclick="location.href='secures.html#tab01'"> <!--карточка товара-->
                         <img src="img/box1.jpg" alt="">
-                        <div class="card-container">
-                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <div class="card-container"> <!--блок с информацией о товаре внизу карточки-->
+                            <p>Охранная система Centurion F50</p>
                             <div class="card-info">
                                 <div class="money">$3,500</div>
                                 <div class="info">
@@ -164,15 +173,15 @@
                         <input type="text" placeholder="Искать в каталоге...">
                         <input type="submit" value="Найти">
                     </form>
-                    <button class="all">Смотреть все</button> <!--кнопка для отображения всего каталога-->
+                    <button class="all" onclick="location.href='tabs.html'">Смотреть все</button> <!--кнопка для отображения всего каталога-->
                 </div>
             </div>
         </section>
-        <section class="steps"> <!--секция с руководством для клиентов-->
+        <section class="steps" id="chooseSystem"> <!--секция с руководством для клиентов-->
             <div class="wrapper">
                 <h2>Как подобрать систему?</h2>
-                <p class="steps-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <p class="steps-text mbtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, vero quisquam.</p>
+                <p class="steps-text">Следуйте простой пошаговой инструкции.</p>
+                <p class="steps-text mbtext">По всем возникающим вопросам можно обращаться по котактному телефону или в наш офис в Санкт-Петербурге.</p>
                 <div class="steps-container"> <!--блок с карточками-->
                     <div class="stepblock" id="stepbl1"> <!--одна карточка-->
                         <p class="step-num">01</p> <!--номер карточки-->
@@ -184,29 +193,28 @@
                     <div class="stepblock" id="stepbl2">
                         <p class="step-num">02</p>
                         <h4><span>02</span>Выберите тип сигнализации</h4>
-                        <p class="step-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Commodi suscipit quibusdam veniam quaerat harum?</p>
-                            <p class="stepinfolast" id="stepbrdr2">Смотреть каталог</p>
+                        <p class="step-info">В каталоге Centurion есть как охранные комплексы с двухсторонней связью и функцией запуска двигателя, так и и бюджетные решения без обратной связи.</p>
+                            <p class="stepinfolast" id="stepbrdr2" onclick="location.href='tabs.html'">Смотреть каталог</p>
                     </div>
                     <div class="stepblock" id="stepbl3">
                         <p class="step-num">03</p>
                         <h4><span>03</span>Обратитесь к установщику</h4>
-                        <p class="step-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Commodi suscipit quibusdam veniam quaerat harum?</p>
+                        <p class="step-info"> Продукцию Centurion можно приобрести и установить в более чем 
+                            3000 установочных студиях, автосалонах и розничных магазинах на всей территории РФ.</p>
                             <p class="stepinfolast" id="stepbrdr3">Выбрать дилера</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="services wrapper"> <!--секция с предоставляемыми сервисными услугами-->
+        <section id="services" class="services wrapper"> <!--секция с предоставляемыми сервисными услугами-->
             <h2>Доп.услуги и сервис</h2>
-            <p>Lorem ipsum dolor sit amet consectetur. </p>
-                <p>Lorem ipsum dolor sit amet.</p>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur. </p>
+                <p>Lorem ipsum dolor sit amet.</p> -->
             <div class="serv-container">
                 <div class="slideshow-container"> <!--слайдер с изображениями-->
                     <div class="slide fade">
                         <div class="serv-img-container">
-                            <img src="img/radio1.jpg" alt="">
+                            <img src="img/slide3.jpg" alt="">
                         </div>
                     </div>
                     <div class="slide fade">
@@ -216,7 +224,7 @@
                     </div>
                     <div class="slide fade">
                         <div class="serv-img-container">
-                            <img src="img/slide3.jpg" alt="">
+                            <img src="img/radio1.jpg" alt="">
                         </div>
                     </div>
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a> <!--ссылки иконки для перехода между слайдами-->
@@ -229,26 +237,24 @@
                 </div>
                 <div class="serv-text"> <!--текст с опианием сервисов-->
                     <h4>Сервисные центры</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Saepe totam iste eaque. Natus perferendis eveniet sit, vitae 
-                        repellendus officiis dolor consequuntur ullam hic.</p>
+                    <p>По всем возникающим вопросам для вас работают сервисные центры в Санкт-Петербруге. 
+                        Подробная информация о режимах работы сервисных центров размещена на странице контактов.</p>
                     <h4>Подобрать модель по брелоку</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Saepe totam iste eaque. Natus perferendis eveniet sit, vitae 
-                            repellendus officiis dolor consequuntur ullam hic.</p>
+                    <p>Бренд предоставляет возможность подобрать модель охранной системы по брелоку вашего автомобиля</p>
                     <h4>Расширенная гарантия</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Saepe totam iste eaque. Natus perferendis eveniet sit, vitae 
-                            repellendus officiis dolor consequuntur ullam hic.</p>
+                    <p> Для увеличения срока гарантии с одного года до трех лет, зарегистрируйте свою охранную систему 
+                        Centurion, заполнив специальную форму.</p>
                 </div>
             </div>
         </section>
-        <section class="dealers"> <!--секция со списком дилеров-->
+        <section class="dealers" id="dealers"> <!--секция со списком дилеров-->
             <div class="wrapper">
                 <h2>Дилеры Centurion</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur alias facilis sint?</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+                <p>Продукцию Centurion можно приобрести и установить в более чем 3 000 установочных студиях, 
+                    автосалонах и розничных магазинах на всей территории РФ. Для розничных покупателей, установщиков и 
+                    продавцов действует бесплатный федеральный телефонный номер технический поддержки.</p>
+                <!--p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur alias facilis sint?</!--p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p!-->
                 <div class="dealer-cards"> <!--блок с карточками-->
                    <div class="dealer-card"><!--карточка дилера-->
                         <img src="img/key1.jpg" alt="">
@@ -283,46 +289,42 @@
                 </div>
             </div>
         </section>
-        <section class="add wrapper"> <!--секция с рекламой топовых моделей-->
+        <section class="add wrapper" id="topModels"> <!--секция с рекламой топовых моделей-->
             <div class="add-line"> <!--блок с изображением и текстом к нему-->
                 <div class="line-img">
-                    <img src="img/add1.jpg" alt="">
-                    <div class="model model-left">Centurion-20</div> <!--блок с информацией на картинке-->
+                    <img src="img/F50_1.jpg" alt="">
+                    <div class="model model-left">Centurion F50</div> <!--блок с информацией на картинке-->
                 </div>
                 <div class="line-text">
-                    <h3>Топовая модель среди охранных систем Centurion-20</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                        Dolores doloribus voluptates totam rerum corporis eius 
-                        recusandae magnam excepturi aperiam, sequi quasi exercitationem. 
-                        Porro rerum magni ea, quod perspiciatis nulla excepturi ex. 
-                        Molestiae blanditiis cumque expedita.</p>
+                    <h3>Топовая модель среди охранных систем Centurion F50</h3>
+                    <p>Многофункциональная автомобильная охранная система с двухсторонней связью и функцией запуска двигателя.
+                        С возможностью дистанционного управления со смартфона при подключении внешнего GSM модуля.
+                    </p>
                 </div>
             </div>
             <div class="add-line add-line-right">
                 <div class="line-text">
-                    <h3>Топовая модель среди автозвуковых систем</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                        Dolores doloribus voluptates totam rerum corporis eius 
-                        recusandae magnam excepturi aperiam, sequi quasi exercitationem. 
-                        Porro rerum magni ea, quod perspiciatis nulla excepturi ex. 
-                        Molestiae blanditiis cumque expedita.</p>
+                    <h3>Топовая модель среди автозвуковых систем Centurion DA-1019</h3>
+                    <p>Модель с расширенным функционалом. Полноценный Bluetooth интерфейс, позволяет не только получить функцию 
+                        громкой связи, но и прослушивать музыкальные композиции со смартфона.Сенсорные кнопки а также крупноформатный 
+                        VA LCD дисплей придают модели современный, новационный внешний вид. Надежность и удобство сенсорного управления 
+                        доказано на практике эксплуатации как в зимних так и в летних условиях. </p>
                 </div>
                 <div class="line-img">
-                    <img src="img/add1.jpg" alt="">
-                    <div class="model model-right">Centurion-20</div>
+                    <img src="img/DA-1019_1.png" alt="">
+                    <div class="model model-right">Centurion DA-1019</div>
                 </div>
             </div>
             <div class="add-line">
                 <div class="line-img">
-                    <img src="img/add1.jpg" alt="">
+                    <img src="img/G18_1.png" alt="">
                 </div>
                 <div class="line-text">
-                    <h3>Топовая модель среди систем с GSM</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                        Dolores doloribus voluptates totam rerum corporis eius 
-                        recusandae magnam excepturi aperiam, sequi quasi exercitationem. 
-                        Porro rerum magni ea, quod perspiciatis nulla excepturi ex.</p>
-                    <div class="show-more">Смотреть каталог</div> <!--кнопка для перехода в каталог-->
+                    <h3>Топовая модель среди систем с GSM Centurion G18</h3>
+                    <p>Сигнализация Centurion, дополненная внешним GSM модулем Centurion G18, представляет собой эффективный 
+                        охранно-сервисный комплекс. Пользователь получает возможность быть на связи со своим автомобилем 
+                        практически без ограничения расстояния – в рамках зоны действия сотовой связи.</p>
+                    <div class="show-more" onclick="location.href='tabs.html'">Смотреть каталог</div> <!--кнопка для перехода в каталог-->
                 </div>
             </div>
         </section>
@@ -341,34 +343,35 @@
             <hr>
             <div class="footer-links"> <!--блок со ссылками-->
                 <div class="footer-links-logo">
-                    <h4>Centurion</h4>
+                    <!-- <h4>Centurion</h4> -->
+                    <img src="img/logo2.png" alt="">
                 </div>
                 <div class="footer-link">
                     <p>Компания</p>
-                    <a href="#">О бренде</a>
-                    <a href="#">Контакты</a>
+                    <a href="about.html">О бренде</a>
+                    <a href="contact_us.html">Контакты</a>
                 </div>
                 <div class="footer-link">
                     <p>Товары</p>
-                    <a href="#">Каталог</a>
-                    <a href="#">Топ-модели</a>
+                    <a href="tabs.html">Каталог</a>
+                    <a href="index.html#topModels">Топ-модели</a>
                     <a href="#">Инструкции</a>
                 </div>
                 <div class="footer-link">
                     <p>Сервис</p>
-                    <a href="#">Дилеры</a>
-                    <a href="#">Получить гарантию</a>
-                    <a href="#">Подобрать модель</a>
+                    <a href="index.html#dealers">Дилеры</a>
+                    <a href="get_warranty.html">Получить гарантию</a>
+                    <a href="index.html#chooseSystem">Подобрать модель</a>
                 </div>
                 <div class="footer-link">
                     <p>Поддержка</p>
-                    <a href="#">FAQ</a>
-                    <a href="#">Написать нам</a>
+                    <a href="contact_us.html">FAQ</a>
+                    <a href="contact_us.html">Написать нам</a>
                     <a href="#">Сотрудничество</a>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

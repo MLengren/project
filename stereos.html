@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товар</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!--меню навигация-->
+            <input type="checkbox" id="checkbox-menu">
+            <label for="checkbox-menu">
+                <ul class="menu touch">
+                    <li onclick="location.href='index.html'"><img src="img/logo.png" alt=""></li>
+                    <!-- <li><a class="logo" href="index.html">Centurion</a></li> -->
+                    <li><a href="about.html">О бренде</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="tabs.html" class="active-tab">Модели</a></li>
+                    <li><a href="get_warranty.html">Гарантия</a></li>
+                    <li><a class="contacts" href="contact_us.html">Контакты</a></li>
+                    <li><a href="#">Стать дилером</a></li>
+                    <li><a href="index.html#services">Поддержка</a></li>
+                </ul>
+                <span class="toggle">☰</span>
+            </label>
+        </nav>
+    </header>
+    <main>
+        <section class="wrapper products">
+            <h1 class="title">Centurion DA-1019<span>Автомагнитола</span></h1>
+            <div class="model-content">
+                <div class="model-img">
+                    <!-- <div class="main-slider">
+                        <div class="slide"><img src="img/s12/1.jpg" alt=""></div>
+                        <div class="slide"><img src="img/s12/2.jpg" alt=""></div>
+                        <div class="slide"><img src="img/s12/3.jpg" alt=""></div>
+                        <div class="slide"><img src="img/s12/4.jpg" alt=""></div>
+                        <a class="prev-s" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next-s" onclick="plusSlides(1)">&#10095;</a>
+                    </div> -->
+                    <div class="swiper main-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="image-slider">
+                                    <img src="img/da1019/1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image-slider">
+                                    <img src="img/da1019/2.png" alt="">
+                                </div>
+                            </div>
+                            <!-- <div class="swiper-slide">
+                                <div class="image-slider">
+                                    <img src="img/s12/3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image-slider">
+                                    <img src="img/s12/4.jpg" alt="">
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="swiper subslider">
+                        <div class="swiper-wrapper">
+                            <div class="subslide swiper-slide">
+                                <div class="subimage">
+                                    <img src="img/da1019/1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="subslide swiper-slide">
+                                <div class="subimage">
+                                    <img src="img/da1019/2.png" alt="">
+                                </div>
+                            </div>
+                            <!-- <div class="subslide swiper-slide">
+                                <div class="subimage">
+                                    <img src="img/s12/3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="subslide swiper-slide">
+                                <div class="subimage">
+                                    <img src="img/s12/4.jpg" alt="">
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+
+                </div>
+                <div class="model-body">
+                    <div class="model-body-tabs">
+                        <nav class="model-body-nav">
+                            <a href="#tab01" class="tabs-item">Описание</a>
+                            <a href="#tab02" class="tabs-item">Хараткеристики</a>
+                        </nav>
+                    </div>
+                    <div class="model-body-body">
+                        <div id="tab01" class="tabs-block">
+                            <p>Модель с расширенным функционалом. Полноценный Bluetooth интерфейс, 
+                                позволяет не только получить функцию громкой связи, но и прослушивать 
+                                музыкальные композиции со смартфона. Кроме беспроводного Bluetooth, к магнитоле 
+                                можно подключить носители через другие популярные интерфейсы: USB, MicroSD, AUX. 
+                                Всего на борту 2 USB разъема, имеющих разное назначение. Первый USB предназначен для
+                                 подключения мультимедийных носителей, а второй имеет повышенную мощность и предназначен
+                                   для зарядки смартфонов. Магнитола воспроизводит композиции, записанные в большинстве 
+                                   популярных форматов, включая FLAC. Особое внимание разработчики уделили радио приёмнику
+                                   , модель превосходит большинство аналогов по качеству приема радио. Изменяемый цвет 
+                                   подсветки клавиш и дисплея позволяет магнитоле легко вписаться в интерьер автомобиля. 
+                                   Размер 1 DIN и ISO разъем подключения максимально облегчают установку магнитолы.
+                                    </p>
+                            <p>Бесплатное приложение позволяет дистанционно управлять магнитолой с помощью смартфона.
+                                Также приложение предоставляет доступ к 7 полосному пользовательскому эквалайзеру.
+                                 Сенсорные кнопки а также крупноформатный VA LCD дисплей придают модели современный, 
+                                 новационный внешний вид. Надежность и удобство сенсорного управления доказано на
+                                  практике эксплуатации как в зимних так и в летних условиях.</p>
+                        </div>
+                        <div id="tab02" class="tabs-block">
+                            <table class="model-charackteristics">
+                                <tr>
+                                    <td class="td-label">Bluetooth интерфейс</td>
+                                    <td class="td-value">A2DP</td>
+                                </tr>
+                                <tr>
+                                    <td class="td-label">Дисплей</td>
+                                    <td class="td-value">VA LCD</td>
+                                </tr>
+                                <tr>
+                                    <td class="td-label">Цвет подсветки</td>
+                                    <td class="td-value">бело-голубой</td>
+                                </tr>
+                                <tr>
+                                    <td class="td-label">Максимальная выходная мощность</td>
+                                    <td class="td-value">4 х 45 Вт</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="footer-block"> <!--блок с логотипом и формой для подписки-->
+                <div class="footer-logo">
+                    <h3>Centurion</h3>
+                    <h3>Alarm Systems</h3>
+                </div>
+                <div class="footer-search">
+                    <input type="text" placeholder="Подписаться на новостную рассылку">
+                </div>
+            </div>
+            <hr>
+            <div class="footer-links"> <!--блок со ссылками-->
+                <div class="footer-links-logo">
+                    <!-- <h4>Centurion</h4> -->
+                    <img src="img/logo2.png" alt="">
+                </div>
+                <div class="footer-link">
+                    <p>Компания</p>
+                    <a href="about.html">О бренде</a>
+                    <a href="contact_us.html">Контакты</a>
+                </div>
+                <div class="footer-link">
+                    <p>Товары</p>
+                    <a href="tabs.html">Каталог</a>
+                    <a href="index.html#topModels">Топ-модели</a>
+                    <a href="#">Инструкции</a>
+                </div>
+                <div class="footer-link">
+                    <p>Сервис</p>
+                    <a href="index.html#dealers">Дилеры</a>
+                    <a href="get_warranty.html">Получить гарантию</a>
+                    <a href="index.html#chooseSystem">Подобрать модель</a>
+                </div>
+                <div class="footer-link">
+                    <p>Поддержка</p>
+                    <a href="contact_us.html">FAQ</a>
+                    <a href="contact_us.html">Написать нам</a>
+                    <a href="#">Сотрудничество</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+
+</html>

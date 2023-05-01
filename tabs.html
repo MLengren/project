@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="tabs.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_tabs.css">
     <title>Католог товаров</title>
+    <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/69bd6ff73b.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -21,14 +23,15 @@
             <input type="checkbox" id="checkbox-menu">
             <label for="checkbox-menu">
                 <ul class="menu touch">
-                    <li><a class="logo" href="#">Centurion</a></li>
-                    <li><a href="#">О бренде</a></li>
-                    <li><a href="#">Новости</a></li>
+                    <li onclick="location.href='index.html'"><img src="img/logo.png" alt=""></li>
+                    <!-- <li><a class="logo" href="index.html">Centurion</a></li> -->
+                    <li><a href="about.html">О бренде</a></li>
+                    <li><a href="news.html">Новости</a></li>
                     <li><a href="#" class="active-tab">Модели</a></li>
-                    <li><a href="#">Гарантия</a></li>
-                    <li><a class="contacts" href="#">Контакты</a></li>
+                    <li><a href="get_warranty.html">Гарантия</a></li>
+                    <li><a class="contacts" href="contact_us.html">Контакты</a></li>
                     <li><a href="#">Стать дилером</a></li>
-                    <li><a href="#">Поддержка</a></li>
+                    <li><a href="index.html#services">Поддержка</a></li>
                 </ul>
                 <span class="toggle">☰</span>
             </label>
@@ -36,10 +39,28 @@
     </header>
     <main> <!--основное содержимое страницы-->
         <div class="pc-tab wrapper">
+            <div id="scrollTop" class="scrollhide">
+                <i class="fa-solid fa-chevron-up"></i>
+            </div>
             <h1>Наши товары</h1>
             <input checked="checked" id="tab1" type="radio" name="pct" /> 
             <input id="tab2" type="radio" name="pct" />
             <input id="tab3" type="radio" name="pct" />
+            <div class="headbar-right">
+                <form action="">
+                    <input type="text" placeholder="Искать в каталоге..." id="elastic">
+                    <!--input type="submit" value="Найти"-->
+                    <div class="res" >
+                        <ul class="elastic">
+                            <li onclick="location.href='secures.html#tab01'">Centurion F50</li>
+                            <li onclick="location.href='stereos.html#tab01'">Centurion DA-1019</li>
+                            <li onclick="location.href='gsm.html#tab01'">Centurion G18</li>
+                            <li onclick="location.href='secures.html#tab01'">Centurion S12</li>
+                        </ul>
+                    </div>
+                </form>
+                
+            </div>
             <nav> <!--вкладки каталога-->
                 <ul>
                     <li class="tab1">
@@ -58,10 +79,10 @@
                     <h2>Охранные Системы</h2>
                     <div class="wrapper product">
                         <div class="cards">
-                            <div class="card">
+                            <div class="card" onclick="location.href='secures.html#tab01'"> <!--карточка товара-->
                                 <img src="img/box1.jpg" alt="">
-                                <div class="card-container">
-                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <div class="card-container"> <!--блок с информацией о товаре внизу карточки-->
+                                    <p>Охранная система Centurion F50</p>
                                     <div class="card-info">
                                         <div class="money">$3,500</div>
                                         <div class="info">
@@ -71,10 +92,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" onclick="location.href='secures.html#tab01'"> <!--карточка товара-->
                                 <img src="img/box1.jpg" alt="">
-                                <div class="card-container">
-                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <div class="card-container"> <!--блок с информацией о товаре внизу карточки-->
+                                    <p>Охранная система Centurion F50</p>
                                     <div class="card-info">
                                         <div class="money">$3,500</div>
                                         <div class="info">
@@ -84,10 +105,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" onclick="location.href='secures.html#tab01'"> <!--карточка товара-->
                                 <img src="img/box1.jpg" alt="">
-                                <div class="card-container">
-                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <div class="card-container"> <!--блок с информацией о товаре внизу карточки-->
+                                    <p>Охранная система Centurion F50</p>
                                     <div class="card-info">
                                         <div class="money">$3,500</div>
                                         <div class="info">
@@ -97,10 +118,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" onclick="location.href='secures.html#tab01'"> <!--карточка товара-->
                                 <img src="img/box1.jpg" alt="">
-                                <div class="card-container">
-                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <div class="card-container"> <!--блок с информацией о товаре внизу карточки-->
+                                    <p>Охранная система Centurion F50</p>
                                     <div class="card-info">
                                         <div class="money">$3,500</div>
                                         <div class="info">
@@ -110,10 +131,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" onclick="location.href='secures.html#tab01'"> <!--карточка товара-->
                                 <img src="img/box1.jpg" alt="">
-                                <div class="card-container">
-                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <div class="card-container"> <!--блок с информацией о товаре внизу карточки-->
+                                    <p>Охранная система Centurion F50</p>
                                     <div class="card-info">
                                         <div class="money">$3,500</div>
                                         <div class="info">
@@ -123,10 +144,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" onclick="location.href='secures.html#tab01'"> <!--карточка товара-->
                                 <img src="img/box1.jpg" alt="">
-                                <div class="card-container">
-                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <div class="card-container"> <!--блок с информацией о товаре внизу карточки-->
+                                    <p>Охранная система Centurion F50</p>
                                     <div class="card-info">
                                         <div class="money">$3,500</div>
                                         <div class="info">
@@ -136,10 +157,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card" onclick="location.href='secures.html#tab01'"> <!--карточка товара-->
                                 <img src="img/box1.jpg" alt="">
-                                <div class="card-container">
-                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                <div class="card-container"> <!--блок с информацией о товаре внизу карточки-->
+                                    <p>Охранная система Centurion F50</p>
                                     <div class="card-info">
                                         <div class="money">$3,500</div>
                                         <div class="info">
@@ -154,15 +175,43 @@
                 </div>
                 <div class="tab2 border"> <!--содержимое второй вкладки-->
                     <h2>Автозвук</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum nesciunt ipsum dolore error
-                        repellendus officiis aliquid a, vitae reprehenderit, accusantium vero, ad. Obcaecati numquam
-                        sapiente cupiditate. Praesentium eaque, quae error!</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, maiores.</p>
+                    <div class="wrapper product">
+                        <div class="cards">
+                            <div class="card">
+                                <img src="img/DA-1019_2.png" alt="">
+                                <div class="card-container">
+                                    <p>Автомагнитола Centurion DA-1019</p>
+                                    <div class="card-info">
+                                        <div class="money">$3,500</div>
+                                        <div class="info">
+                                            <span>VA</span>
+                                            <span>LCD</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
                 </div>
                 <div class="tab3 border"> <!--содержимое третьей вкладки-->
                     <h2>Иммобилайзеры</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, nobis culpa rem, vitae earum
-                        aliquid.</p>
+                    <div class="wrapper product">
+                        <div class="cards">
+                            <div class="card" onclick="location.href='gsm.html#tab01'">
+                                <img src="img/G18_2.png" alt="">
+                                <div class="card-container">
+                                    <p>Дистанционный запуск Centurion G18</p>
+                                    <div class="card-info">
+                                        <div class="money">$3,500</div>
+                                        <div class="info">
+                                            <span>AV</span>
+                                            <span>AHJ</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
@@ -182,35 +231,37 @@
             <hr>
             <div class="footer-links"> <!--блок со ссылками-->
                 <div class="footer-links-logo">
-                    <h4>Centurion</h4>
+                    <!-- <h4>Centurion</h4> -->
+                    <img src="img/logo2.png" alt="">
                 </div>
                 <div class="footer-link">
                     <p>Компания</p>
-                    <a href="#">О бренде</a>
-                    <a href="#">Контакты</a>
+                    <a href="about.html">О бренде</a>
+                    <a href="contact_us.html">Контакты</a>
                 </div>
                 <div class="footer-link">
                     <p>Товары</p>
-                    <a href="#">Каталог</a>
-                    <a href="#">Топ-модели</a>
+                    <a href="tabs.html">Каталог</a>
+                    <a href="index.html#topModels">Топ-модели</a>
                     <a href="#">Инструкции</a>
                 </div>
                 <div class="footer-link">
                     <p>Сервис</p>
-                    <a href="#">Дилеры</a>
-                    <a href="#">Получить гарантию</a>
-                    <a href="#">Подобрать модель</a>
+                    <a href="index.html#dealers">Дилеры</a>
+                    <a href="get_warranty.html">Получить гарантию</a>
+                    <a href="index.html#chooseSystem">Подобрать модель</a>
                 </div>
                 <div class="footer-link">
                     <p>Поддержка</p>
-                    <a href="#">FAQ</a>
-                    <a href="#">Написать нам</a>
+                    <a href="contact_us.html">FAQ</a>
+                    <a href="contact_us.html">Написать нам</a>
                     <a href="#">Сотрудничество</a>
                 </div>
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/live_search.js"></script>
 </body>
 
 </html>

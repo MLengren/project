@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_contact_us.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/69bd6ff73b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav> <!--меню навигация-->
+            <input type="checkbox" id="checkbox-menu">
+            <label for="checkbox-menu">
+                <ul class="menu touch">
+                    <li onclick="location.href='index.html'"><img src="img/logo.png" alt=""></li>
+                    <!-- <li><a class="logo" href="index.html">Centurion</a></li> -->
+                    <li><a href="about.html">О бренде</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="tabs.html">Модели</a></li>
+                    <li><a href="get_warranty.html">Гарантия</a></li>
+                    <li><a class="contacts active-tab" href="#">Контакты</a></li>
+                    <li><a href="#">Стать дилером</a></li>
+                    <li><a href="index.html#services">Поддержка</a></li>
+                </ul>
+                <span class="toggle">☰</span>
+            </label>
+        </nav>
+    </header>
+    <main> <!--основное содержимое страницы-->
+        <section class="contact-form wrapper">
+            <div class="contacts-list"> <!--блоки с контакной информацией-->
+                <div class="list-boxes">
+                    <div class="list-box">
+                        <div class="box-info">
+                            <h5><i class="fa-solid fa-location-dot"></i>Наш главный офис</h5>
+                            <p>СПб, ул.Моисеенко, 41</p>
+                        </div>
+                    </div>
+                    <div class="list-box">
+                        <div class="box-info">
+                            <h5><i class="fa-solid fa-phone"></i>Телефон</h5>
+                            <p>8-800-555-86-56</p>
+                            <p>+7-812-710-28-04</p>
+                        </div>
+                    </div>
+                    <div class="list-box">
+                        <div class="box-info">
+                            <h5 style="font-size: 19px;"><i class="fa-solid fa-screwdriver-wrench"></i>Режим работы тех.поддержки</h5>
+                            <p>Пн-Вс круглосуточно</p>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="list-box">
+                        <div class="box-info">
+                            <h5><i class="fa-solid fa-envelope"></i>Электронная Почта</h5>
+                            <p>alarm@stopolgroup.ru</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="contacts-map"> <!--блок с контактной формой и картой-->
+                <div class="layout-row">
+                    <div class="layout-left"> <!--контактная форма-->
+                        <div class="left-content">
+                            <h3>Задать нам вопрос</h3>
+                            <form action="#popup" method="post">
+                                <div class="input-email">
+                                    <label for="">Ваш email</label>
+                                    <input type="email" placeholder="Введите ваш email" required class="input">                      
+                                </div>
+                                <div class="input-name">
+                                    <label for="">Ваше имя</label>
+                                    <input type="text" placeholder="Введите ваше имя" required class="input">                      
+                                </div>
+                                <div class="input-message">
+                                    <label for="">Сообщение</label>
+                                    <textarea placeholder="Введите ваше сообщение" cols="50" rows="4" required class="input"></textarea>                      
+                                </div>
+                                <div class="input-submit">
+                                    <!-- <a href="#" class="btn">Отправить</a> -->
+                                    <input type="submit" value="Отправить">                      
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="layout-right"> <!--карта-->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.717212833952!2d30.390778615590115!3d59.93683446920684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963194af15b1ef%3A0x38606b0562e11ce5!2z0YPQuy4g0JzQvtC40YHQtdC10L3QutC-LCA0MSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsINCb0LXQvdC40L3Qs9GA0LDQtNGB0LrQsNGPINC-0LHQuy4sIDE5MTEyNA!5e0!3m2!1sru!2sru!4v1680767152280!5m2!1sru!2sru" 
+                                 width="100%" height="410" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="footer-block"> <!--блок с логотипом и формой для подписки-->
+                <div class="footer-logo">
+                    <h3>Centurion</h3>
+                    <h3>Alarm Systems</h3>
+                </div>
+                <div class="footer-search">
+                    <input type="text" placeholder="Подписаться на новостную рассылку">
+                </div>
+            </div>
+            <hr>
+            <div class="footer-links"> <!--блок со ссылками-->
+                <div class="footer-links-logo">
+                    <!-- <h4>Centurion</h4> -->
+                    <img src="img/logo2.png" alt="">
+                </div>
+                <div class="footer-link">
+                    <p>Компания</p>
+                    <a href="about.html">О бренде</a>
+                    <a href="contact_us.html">Контакты</a>
+                </div>
+                <div class="footer-link">
+                    <p>Товары</p>
+                    <a href="tabs.html">Каталог</a>
+                    <a href="index.html#topModels">Топ-модели</a>
+                    <a href="#">Инструкции</a>
+                </div>
+                <div class="footer-link">
+                    <p>Сервис</p>
+                    <a href="index.html#dealers">Дилеры</a>
+                    <a href="get_warranty.html">Получить гарантию</a>
+                    <a href="index.html#chooseSystem">Подобрать модель</a>
+                </div>
+                <div class="footer-link">
+                    <p>Поддержка</p>
+                    <a href="contact_us.html">FAQ</a>
+                    <a href="contact_us.html">Написать нам</a>
+                    <a href="#">Сотрудничество</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="popup" class="popup">
+        <a href="#" class="popup-area"></a>
+        <div class="popup-body">
+            <div class="popup-content">
+                <a href="#" class="popup-close"><i class="fa-solid fa-xmark"></i></a>
+                <div class="popup-title">Ваше сообщение отправлено!</div>
+                <div class="popup-text">В ближайшее время с Вами свяжется оператор.</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

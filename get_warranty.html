@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Получить расширенную гарантию</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_get_warranty.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/69bd6ff73b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!--меню навигация-->
+            <input type="checkbox" id="checkbox-menu">
+            <label for="checkbox-menu">
+                <ul class="menu touch">
+                    <li onclick="location.href='index.html'"><img src="img/logo.png" alt=""></li>
+                    <!-- <li><a class="logo" href="#">Centurion</a></li> -->
+                    <li><a href="about.html">О бренде</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="tabs.html">Модели</a></li>
+                    <li><a href="#" class="active-tab">Гарантия</a></li>
+                    <li><a class="contacts" href="contact_us.html">Контакты</a></li>
+                    <li><a href="#">Стать дилером</a></li>
+                    <li><a href="index.html#services">Поддержка</a></li>
+                </ul>
+                <span class="toggle">☰</span>
+            </label>
+        </nav>
+    </header>
+    <main>
+        <section class="wrapper get-warranty">
+            <div class="get-warranty-form">
+                <h2>Заполните форму для получения расширенной гарантии</h2>
+                <form action="#popup" method="post">
+                    <div class="input-box">
+                        <label>Серийный номер системы:</label>
+                        <input type="text" placeholder="18 цифр" pattern="[0-9]{18}" required>
+                    </div>
+                    <div class="input-box">
+                        <label>Автомобиль, на который установлена система:</label>
+                        <input type="text" placeholder="марка, модель, тип КПП" required>
+                    </div>
+                    <div class="column">
+                        <div class="input-box">
+                            <label>Email владельца:</label>
+                            <input type="email" placeholder="Введите ваш email" required>
+                        </div>
+                        <div class="input-box">
+                            <label>Номер телефона владельца:</label>
+                            <input type="text" placeholder="Введите ваш номер телефона" pattern="+79[0-9]{9}" required>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <label>Название организации, произведшей установку:</label>
+                        <input type="text" placeholder="" required>
+                    </div>
+                    <div class="column">
+                        <div class="input-box">
+                            <label>Дата установки системы:</label>
+                            <input type="date" required>
+                        </div>
+                        <div class="input-box">
+                            <label>Номер телефона организации:</label>
+                            <input type="text" placeholder="Введите телефон организации" pattern="+79[0-9]{9}" required>
+                        </div>
+                    </div>
+                    <div class="input-box address">
+                        <label>Адрес организации, произведшей установку:</label>
+                        <!--input type="text" placeholder="Enter adress" required>
+                        <input type="text" placeholder="Enter adress line 2" required-->
+                        <div class="column">
+                            <div class="select-box">
+                                <select>
+                                    <option hidden>Регион</option>
+                                    <option>Санкт-Петербруг</option>
+                                    <option>Москва</option>
+                                </select>
+                            </div>
+                            <input type="text" placeholder="Населенный пункт" required>
+                        </div>
+                        <!--div class="column">
+                            <input type="text" placeholder="Enter city" required>
+                            <input type="text" placeholder="Enter phone organization" required>
+                        </!--div-->
+                    </div>
+                    <input type="submit" value="Подать заявку">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="footer-block"> <!--блок с логотипом и формой для подписки-->
+                <div class="footer-logo">
+                    <h3>Centurion</h3>
+                    <h3>Alarm Systems</h3>
+                </div>
+                <div class="footer-search">
+                    <input type="text" placeholder="Подписаться на новостную рассылку">
+                </div>
+            </div>
+            <hr>
+            <div class="footer-links"> <!--блок со ссылками-->
+                <div class="footer-links-logo">
+                    <!-- <h4>Centurion</h4> -->
+                    <img src="img/logo2.png" alt="">
+                </div>
+                <div class="footer-link">
+                    <p>Компания</p>
+                    <a href="about.html">О бренде</a>
+                    <a href="contact_us.html">Контакты</a>
+                </div>
+                <div class="footer-link">
+                    <p>Товары</p>
+                    <a href="tabs.html">Каталог</a>
+                    <a href="index.html#topModels">Топ-модели</a>
+                    <a href="#">Инструкции</a>
+                </div>
+                <div class="footer-link">
+                    <p>Сервис</p>
+                    <a href="index.html#dealers">Дилеры</a>
+                    <a href="get_warranty.html">Получить гарантию</a>
+                    <a href="index.html#chooseSystem">Подобрать модель</a>
+                </div>
+                <div class="footer-link">
+                    <p>Поддержка</p>
+                    <a href="contact_us.html">FAQ</a>
+                    <a href="contact_us.html">Написать нам</a>
+                    <a href="#">Сотрудничество</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="popup" class="popup"> <!-- всплывающее окно при нажатии кнопки отправки правильно заполненной формы-->
+        <a href="index.html" class="popup-area"></a>
+        <div class="popup-body">
+            <div class="popup-content">
+                <a href="index.html" class="popup-close"><i class="fa-solid fa-xmark"></i></a>
+                <div class="popup-title">Заявка принята!</div>
+                <div class="popup-text">Вы подали заявку на получение расширенной гарантии. В ближайшее время с Вами свяжется оператор для подтверждения данных.</div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

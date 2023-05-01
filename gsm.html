@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Товар</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!--меню навигация-->
+            <input type="checkbox" id="checkbox-menu">
+            <label for="checkbox-menu">
+                <ul class="menu touch">
+                    <li onclick="location.href='index.html'"><img src="img/logo.png" alt=""></li>
+                    <!-- <li><a class="logo" href="index.html">Centurion</a></li> -->
+                    <li><a href="about.html">О бренде</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="tabs.html" class="active-tab">Модели</a></li>
+                    <li><a href="get_warranty.html">Гарантия</a></li>
+                    <li><a class="contacts" href="contact_us.html">Контакты</a></li>
+                    <li><a href="#">Стать дилером</a></li>
+                    <li><a href="index.html#services">Поддержка</a></li>
+                </ul>
+                <span class="toggle">☰</span>
+            </label>
+        </nav>
+    </header>
+    <main>
+        <section class="wrapper products">
+            <h1 class="title">Centurion G18<span>Дистанционный запуск по GSM</span></h1>
+            <div class="model-content">
+                <div class="model-img">
+                    <!-- <div class="main-slider">
+                        <div class="slide"><img src="img/s12/1.jpg" alt=""></div>
+                        <div class="slide"><img src="img/s12/2.jpg" alt=""></div>
+                        <div class="slide"><img src="img/s12/3.jpg" alt=""></div>
+                        <div class="slide"><img src="img/s12/4.jpg" alt=""></div>
+                        <a class="prev-s" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next-s" onclick="plusSlides(1)">&#10095;</a>
+                    </div> -->
+                    <div class="swiper main-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="image-slider">
+                                    <img src="img/g18/1.png" alt="">
+                                </div>
+                            </div>
+                            <!-- <div class="swiper-slide">
+                                <div class="image-slider">
+                                    <img src="img/s12/2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image-slider">
+                                    <img src="img/s12/3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="image-slider">
+                                    <img src="img/s12/4.jpg" alt="">
+                                </div>
+                            </div>-->
+                        </div>
+                    </div>
+                    <div class="swiper subslider">
+                        <div class="swiper-wrapper">
+                            <div class="subslide swiper-slide">
+                                <div class="subimage">
+                                    <img src="img/g18/1.png" alt="">
+                                </div>
+                            </div>
+                            <!-- <div class="subslide swiper-slide">
+                                <div class="subimage">
+                                    <img src="img/s12/2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="subslide swiper-slide">
+                                <div class="subimage">
+                                    <img src="img/s12/3.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="subslide swiper-slide">
+                                <div class="subimage">
+                                    <img src="img/s12/4.jpg" alt="">
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+
+                </div>
+                <div class="model-body">
+                    <div class="model-body-tabs">
+                        <nav class="model-body-nav">
+                            <a href="#tab01" class="tabs-item">Описание</a>
+                            <a href="#tab02" class="tabs-item">Хараткеристики</a>
+                        </nav>
+                    </div>
+                    <div class="model-body-body">
+                        <div id="tab01" class="tabs-block">
+                           <p>Модуль Centurion G18 предназначен для расширения возможностей управления автосигнализациями Centurion.
+                            <p>Сигнализация Centurion, дополненная внешним GSM модулем Centurion G18, представляет собой эффективный 
+                                охранно-сервисный комплекс. Пользователь получает возможность быть на связи со своим автомобилем практически без ограничения расстояния – в рамках зоны действия сотовой связи.</p>
+                           <p> Модуль G18 позволяет получать на смартфон владельца информацию о состоянии охранной системы, 
+                            о факте срабатывания тревоги. Также модуль G18 позволяет с помощью смартфона управлять основными 
+                            функциями охранной системы, включая дистанционный запуск двигателя.</p>
+                           <p> Centurion G18 совместим с моделями:
+                            Centurion S12
+                            Centurion IS-10
+                            Centurion S9
+                            Centurion IS-8
+                            Fighter 90</p>
+                            <p>Монтаж модуля G18 максимально упрощен. Требуется подключение 1 провода питания к бортовой сети автомобиля, по
+                                дключение к автосигнализации производится разъем-в-разъем.</p>
+                        </div>
+                        <div id="tab02" class="tabs-block">
+                            <table class="model-charackteristics">
+                                <tr>
+                                    <td class="td-label">Управление системой</td>
+                                    <td class="td-value">Нет</td>
+                                </tr>
+                                <tr>
+                                    <td class="td-label">Диалоговый код</td>
+                                    <td class="td-value">Да</td>
+                                </tr>
+                                <tr>
+                                    <td class="td-label">Брелок с ЖК-дисплеем</td>
+                                    <td class="td-value">Нет</td>
+                                </tr>
+                                <tr>
+                                    <td class="td-label">Брелок без дисплея</td>
+                                    <td class="td-value">Нет</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="wrapper">
+            <div class="footer-block"> <!--блок с логотипом и формой для подписки-->
+                <div class="footer-logo">
+                    <h3>Centurion</h3>
+                    <h3>Alarm Systems</h3>
+                </div>
+                <div class="footer-search">
+                    <input type="text" placeholder="Подписаться на новостную рассылку">
+                </div>
+            </div>
+            <hr>
+            <div class="footer-links"> <!--блок со ссылками-->
+                <div class="footer-links-logo">
+                    <!-- <h4>Centurion</h4> -->
+                    <img src="img/logo2.png" alt="">
+                </div>
+                <div class="footer-link">
+                    <p>Компания</p>
+                    <a href="about.html">О бренде</a>
+                    <a href="contact_us.html">Контакты</a>
+                </div>
+                <div class="footer-link">
+                    <p>Товары</p>
+                    <a href="tabs.html">Каталог</a>
+                    <a href="index.html#topModels">Топ-модели</a>
+                    <a href="#">Инструкции</a>
+                </div>
+                <div class="footer-link">
+                    <p>Сервис</p>
+                    <a href="index.html#dealers">Дилеры</a>
+                    <a href="get_warranty.html">Получить гарантию</a>
+                    <a href="index.html#chooseSystem">Подобрать модель</a>
+                </div>
+                <div class="footer-link">
+                    <p>Поддержка</p>
+                    <a href="contact_us.html">FAQ</a>
+                    <a href="contact_us.html">Написать нам</a>
+                    <a href="#">Сотрудничество</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+
+</html>
