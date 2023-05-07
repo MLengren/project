@@ -1,0 +1,119 @@
+/*----Страница Поддержка---- */
+.support{
+    padding: 40px 10px;
+}
+.sup-container{ /* расположение двух блоков на странице */
+    display: flex;
+}
+.sup-left{ /*  блок с изображением*/
+    width: 40%;
+    overflow: hidden;
+}
+.sup-right{ /*  блок с текстовой информацией*/
+    width: 60%;
+    padding: 0 20px;
+}
+.sup-right h2{ /* стилизация заголовка */
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+button.accordeon{ /*  стилизация кнопки для открытия вкладки аккордеона */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    color: #333;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    border-bottom: solid 1px #333;
+    font-size: 14px;
+    
+}
+button.accordeon i{ /* стилизация иконки */
+    color: #333;
+    transform: rotate(360deg);
+    transition: transform .4s;
+}
+button.accordeon.active i{ /* поворот иконки при открытии вкладки */
+   transform: rotate(180deg);
+}
+button.accordeon i:hover{
+    color: #00b8e4;
+}
+.panel{ /*  оформление содержания вкладки, по умолчанию содержимое скрыто*/
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 22px;
+    display: none;
+    color: #333;
+}
+.panel.show{ /* отображение содержимого вкладки */
+    display: block;
+}
+.panel li{ /*  сброс оформления пунктов списка*/
+    list-style: none;
+}
+/* стилизация ссылок внутри пунктов списка */
+.panel a{ 
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    cursor: pointer;
+}
+.panel a:hover{
+    color: #00b8e4;
+}
+/* стилизация кнопки для пеерхода в раздел Получение гарантии */
+.get-warranty{ 
+    width: 120px;
+    padding: 5px;
+    background-color: transparent;
+    border: solid 1px #00b8e4;
+    border-radius: 4px;
+    text-align: center;
+    color: #00b8e4;
+    cursor: pointer;
+    transition: all .2s;
+    margin-top: 20px;
+}
+.get-warranty:hover{
+    background-color: #00b8e4;
+    color: #fff;
+}
+.panel ul li.archive{ /*расположение элементов списка архивных моделей в ряд*/
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.panel ul li.archive img{ /* оформление изображения архивных моделей */
+    width: 50px;
+    margin-right: 20px;
+}
+.panel ul li.archive a{ /* позиционирование ссылки для скачивания инструкции для архивных моделей */
+    margin-left: 300px;
+}
+
+
+@media screen and (max-width: 765px){
+    .sup-container{
+        flex-direction: column;
+    }
+    .sup-left{
+        width: 100%;
+        overflow: hidden;
+        max-height: 440px;
+    }
+    .sup-left img{
+        width: 100%;
+    }
+    .sup-right{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .panel ul li.archive a{
+        margin-left: 20px;
+    }
+}
