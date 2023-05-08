@@ -32,7 +32,7 @@ stpbl3.onmouseout = function(){
 
 
 //слайдер для секции с сервисами
-var slideIndex = 1;
+let slideIndex = 1;
 showSlides(slideIndex);
 function plusSlides(n){ //переход по слайдам вперед/назад с помощью иконок стрелок
     showSlides(slideIndex += n)
@@ -41,9 +41,9 @@ function currentSlide(n){ //переход на конкретный слайд 
     showSlides(slideIndex = n)
 }
 function showSlides(n){
-    var i;
-    var slides = document.getElementsByClassName("slide");
-    var dots = document.getElementsByClassName("dot");
+    let i;
+    let slides = document.getElementsByClassName("slide");
+    let dots = document.getElementsByClassName("dot");
     if(n>slides.length){ //если индекс слайда больше длинны массива слайдов, возвращаемся к первому
         slideIndex = 1;
     }
